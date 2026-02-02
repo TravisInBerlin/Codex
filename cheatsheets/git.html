@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" href="../assets/css/cheatsheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="title">Git Cheat Sheet</div>
+        <div class="subtitle">
+          日々の開発で使うコマンドだけを厳選。
+          迷いやすい操作は“安全な型”で覚える。
+        </div>
+        <div class="meta">
+          <span class="badge">Version Control</span>
+          <span class="badge">Team Workflow</span>
+          <span class="badge">CLI</span>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div><strong>基本の流れ</strong>：status → add → commit → push。</div>
+        <div>迷ったら <code>git status</code> が最初の一手。</div>
+      </div>
+
+      <div class="section-title">日常操作</div>
+      <div class="grid">
+        <div class="card">
+          <h3>状態確認</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git status</code>
+              <div class="desc">変更ファイルの確認</div>
+            </li>
+            <li class="command">
+              <code>git log --oneline --graph</code>
+              <div class="desc">履歴の俯瞰</div>
+            </li>
+            <li class="command">
+              <code>git diff</code>
+              <div class="desc">未ステージ差分</div>
+            </li>
+            <li class="command">
+              <code>git diff --staged</code>
+              <div class="desc">ステージ済み差分</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>ステージ & コミット</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git add .</code>
+              <div class="desc">全変更をステージ</div>
+            </li>
+            <li class="command">
+              <code>git add -p</code>
+              <div class="desc">対話的にステージ</div>
+            </li>
+            <li class="command">
+              <code>git commit -m "msg"</code>
+              <div class="desc">コミット</div>
+            </li>
+            <li class="command">
+              <code>git commit --amend</code>
+              <div class="desc">直前コミット修正</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>リモート</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git remote -v</code>
+              <div class="desc">接続先確認</div>
+            </li>
+            <li class="command">
+              <code>git pull --rebase</code>
+              <div class="desc">最新取得（履歴を整理）</div>
+            </li>
+            <li class="command">
+              <code>git push origin branch</code>
+              <div class="desc">ブランチを送信</div>
+            </li>
+            <li class="command">
+              <code>git fetch --prune</code>
+              <div class="desc">不要なリモート参照を掃除</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">初期化 & 設定</div>
+      <div class="quick-grid">
+        <div class="card">
+          <h3>初期セットアップ</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git config --global user.name "Name"</code>
+              <div class="desc">ユーザー名設定</div>
+            </li>
+            <li class="command">
+              <code>git config --global user.email "me@example.com"</code>
+              <div class="desc">メール設定</div>
+            </li>
+            <li class="command">
+              <code>git config --list</code>
+              <div class="desc">現在の設定を確認</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>リポジトリ作成</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git init</code>
+              <div class="desc">新規リポジトリ</div>
+            </li>
+            <li class="command">
+              <code>git clone URL</code>
+              <div class="desc">リモートを取得</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">ブランチ操作</div>
+      <div class="quick-grid">
+        <div class="card">
+          <h3>作成・移動</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git switch -c feature/x</code>
+              <div class="desc">新規ブランチ作成</div>
+            </li>
+            <li class="command">
+              <code>git switch main</code>
+              <div class="desc">ブランチ移動</div>
+            </li>
+            <li class="command">
+              <code>git branch</code>
+              <div class="desc">ローカル一覧</div>
+            </li>
+            <li class="command">
+              <code>git branch -vv</code>
+              <div class="desc">追跡先と最新状態</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>マージ</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git merge feature/x</code>
+              <div class="desc">ブランチ統合</div>
+            </li>
+            <li class="command">
+              <code>git rebase main</code>
+              <div class="desc">ベースを更新</div>
+            </li>
+            <li class="command">
+              <code>git merge --no-ff feature/x</code>
+              <div class="desc">マージコミットを残す</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">履歴の整理（rebase -i）</div>
+      <div class="grid">
+        <div class="card">
+          <h3>対話的リベース</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git rebase -i HEAD~3</code>
+              <div class="desc">直近 3 コミットを編集</div>
+            </li>
+            <li class="command">
+              <code>pick / reword / squash / fixup / drop</code>
+              <div class="desc">並び替え・統合・削除の指示語</div>
+            </li>
+            <li class="command">
+              <code>:wq</code>
+              <div class="desc">編集内容を保存して続行（Vim の場合）</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>中断と継続</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git rebase --continue</code>
+              <div class="desc">解決後に続行</div>
+            </li>
+            <li class="command">
+              <code>git rebase --abort</code>
+              <div class="desc">リベースを破棄</div>
+            </li>
+            <li class="command">
+              <code>git rebase --skip</code>
+              <div class="desc">問題コミットを飛ばす</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">トラブルシュート</div>
+      <div class="grid">
+        <div class="card">
+          <h3>やり直し</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git restore file</code>
+              <div class="desc">作業ツリーの変更を破棄</div>
+            </li>
+            <li class="command">
+              <code>git restore --staged file</code>
+              <div class="desc">ステージ解除</div>
+            </li>
+            <li class="command">
+              <code>git reset --soft HEAD~1</code>
+              <div class="desc">コミットだけ戻す</div>
+            </li>
+            <li class="command">
+              <code>git reset --hard HEAD</code>
+              <div class="desc">作業ツリーごと完全に戻す</div>
+            </li>
+            <li class="command">
+              <code>git revert HEAD</code>
+              <div class="desc">打ち消しコミットを作成</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>一時退避</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git stash push -m "wip"</code>
+              <div class="desc">作業を一時保存</div>
+            </li>
+            <li class="command">
+              <code>git stash list</code>
+              <div class="desc">退避一覧</div>
+            </li>
+            <li class="command">
+              <code>git stash pop</code>
+              <div class="desc">退避を戻す</div>
+            </li>
+            <li class="command">
+              <code>git stash apply stash@{0}</code>
+              <div class="desc">指定の退避を復元</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>コンフリクト対応</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git status</code>
+              <div class="desc">衝突ファイルの確認</div>
+            </li>
+            <li class="command">
+              <code>git add path/to/file</code>
+              <div class="desc">解決済みをステージ</div>
+            </li>
+            <li class="command">
+              <code>git rebase --continue</code>
+              <div class="desc">リベースの続行</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>復旧・調査</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>git reflog</code>
+              <div class="desc">操作履歴から復旧</div>
+            </li>
+            <li class="command">
+              <code>git cherry-pick SHA</code>
+              <div class="desc">特定コミットだけ取り込む</div>
+            </li>
+            <li class="command">
+              <code>git bisect</code>
+              <div class="desc">不具合混入コミットを二分探索</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Tip:</strong> 迷ったら <code>git status</code> と <code>git reflog</code> で現状確認。焦らず安全に戻せます。
+      </div>
+
+      <div class="footer-note">Updated for modern Git workflows.</div>
+    </div>
+
+    <script>
+      const commands = document.querySelectorAll('.command');
+      commands.forEach((cmd) => {
+        const target = cmd.querySelector('code, kbd');
+        if (!target) return;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'copy-btn';
+        btn.setAttribute('aria-label', 'Copy command');
+        btn.setAttribute('title', 'Copy');
+
+        btn.addEventListener('click', async () => {
+          const text = target.textContent.trim();
+          if (!text) return;
+          try {
+            await navigator.clipboard.writeText(text);
+            btn.classList.add('copied');
+            btn.setAttribute('title', 'Copied');
+            setTimeout(() => {
+              btn.classList.remove('copied');
+              btn.setAttribute('title', 'Copy');
+            }, 900);
+          } catch (err) {
+            btn.setAttribute('title', 'Failed');
+            setTimeout(() => {
+              btn.setAttribute('title', 'Copy');
+            }, 900);
+          }
+        });
+
+        cmd.appendChild(btn);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nano Cheat Sheet</title>
+    <link rel="stylesheet" href="../assets/css/cheatsheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="title">nano Cheat Sheet</div>
+        <div class="subtitle">
+          軽量エディタ nano の“迷わない操作”。よく使う編集・検索・保存・
+          カット/ペーストをコンパクトに集約。Mac キーボード表記も併記。
+        </div>
+        <div class="meta">
+          <span class="badge">Editor</span>
+          <span class="badge">Terminal</span>
+          <span class="badge">Beginner Friendly</span>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div><strong>覚えると速い</strong>：nano は基本操作がすべて画面下に表示されます。</div>
+        <div>Mac では Alt が Option に相当します。表記は <code>Alt (Option)</code> で統一。</div>
+        <div><code>M-</code> 表記の操作は <code>Esc → キー</code> でも実行できます。</div>
+      </div>
+
+      <div class="section-title">基本操作</div>
+      <div class="grid">
+        <div class="card">
+          <h3>ファイル操作</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>nano filename</code>
+              <div class="desc">ファイルを開く / 新規作成</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + O</kbd>
+              <div class="desc">保存（Write Out）</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + X</kbd>
+              <div class="desc">終了（保存確認あり）</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>移動</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>Ctrl + A</kbd>
+              <div class="desc">行頭へ移動</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + E</kbd>
+              <div class="desc">行末へ移動</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + V</kbd>
+              <div class="desc">次ページへ</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + Y</kbd>
+              <div class="desc">前ページへ</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>編集</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>Ctrl + K</kbd>
+              <div class="desc">行をカット（切り取り）</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + U</kbd>
+              <div class="desc">カットした内容をペースト</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + T</kbd>
+              <div class="desc">スペルチェック / コマンド実行</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">検索・置換</div>
+      <div class="quick-grid">
+        <div class="card">
+          <h3>検索</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>Ctrl + W</kbd>
+              <div class="desc">検索（次の一致も Enter で続行）</div>
+            </li>
+            <li class="command">
+              <kbd>Alt (Option) + W</kbd>
+              <div class="desc"><code>M-W</code>：次の一致へ（Esc → W でも可）</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>置換</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>Ctrl + \</kbd>
+              <div class="desc">検索して置換</div>
+            </li>
+            <li class="command">
+              <code>Alt (Option) + R</code>
+              <div class="desc"><code>M-R</code>：置換を繰り返し実行（Esc → R でも可）</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">便利な小技</div>
+      <div class="grid">
+        <div class="card">
+          <h3>ヘルプ/情報</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>Ctrl + G</kbd>
+              <div class="desc">ヘルプ表示</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + C</kbd>
+              <div class="desc">カーソル位置の行/列を表示</div>
+            </li>
+            <li class="command">
+              <kbd>Alt (Option) + U</kbd>
+              <div class="desc"><code>M-U</code>：Undo（戻る）（Esc → U でも可）</div>
+            </li>
+            <li class="command">
+              <kbd>Alt (Option) + E</kbd>
+              <div class="desc"><code>M-E</code>：Redo（やり直し）（Esc → E でも可）</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>複数ファイル</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>nano file1 file2</code>
+              <div class="desc">複数ファイルを開く</div>
+            </li>
+            <li class="command">
+              <kbd>Alt (Option) + &gt;</kbd>
+              <div class="desc"><code>M-&gt;</code>：次のファイルへ（Esc → &gt; でも可）</div>
+            </li>
+            <li class="command">
+              <kbd>Alt (Option) + &lt;</kbd>
+              <div class="desc"><code>M-&lt;</code>：前のファイルへ（Esc → &lt; でも可）</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Tip:</strong> <code>M-</code>（Meta）は Esc で代用可能。Mac では Option を Meta に割り当てると <code>M-</code> 操作が楽になります。
+      </div>
+
+      <div class="footer-note">Updated for everyday editing workflows.</div>
+    </div>
+
+  </body>
+</html>

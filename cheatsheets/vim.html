@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vim Cheat Sheet</title>
+    <link rel="stylesheet" href="../assets/css/cheatsheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="title">Vim Cheat Sheet</div>
+        <div class="subtitle">
+          Vim の頻出モード操作と編集コマンドを実務向けに整理。
+          ノーマルモード中心に、覚えるだけで速度が段違い。
+        </div>
+        <div class="meta">
+          <span class="badge">Editor</span>
+          <span class="badge">Modal</span>
+          <span class="badge">Productivity</span>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div><strong>基本は 3 モード</strong>：Normal（操作）、Insert（入力）、Visual（選択）。</div>
+        <div>Esc で Normal に戻れることが最重要の安全装置。</div>
+      </div>
+
+      <div class="section-title">モード & 基本</div>
+      <div class="grid">
+        <div class="card">
+          <h3>モード切替</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>i</kbd>
+              <div class="desc">Insert モード</div>
+            </li>
+            <li class="command">
+              <kbd>a</kbd>
+              <div class="desc">カーソルの後ろから入力</div>
+            </li>
+            <li class="command">
+              <kbd>Esc</kbd>
+              <div class="desc">Normal に戻る</div>
+            </li>
+            <li class="command">
+              <kbd>v</kbd>
+              <div class="desc">Visual モード（文字単位選択）</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>保存・終了</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>:w</code>
+              <div class="desc">保存</div>
+            </li>
+            <li class="command">
+              <code>:q</code>
+              <div class="desc">終了</div>
+            </li>
+            <li class="command">
+              <code>:wq</code>
+              <div class="desc">保存して終了</div>
+            </li>
+            <li class="command">
+              <code>:q!</code>
+              <div class="desc">保存せず終了</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>移動</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>h j k l</kbd>
+              <div class="desc">左/下/上/右</div>
+            </li>
+            <li class="command">
+              <kbd>0</kbd>
+              <div class="desc">行頭</div>
+            </li>
+            <li class="command">
+              <kbd>$</kbd>
+              <div class="desc">行末</div>
+            </li>
+            <li class="command">
+              <kbd>gg / G</kbd>
+              <div class="desc">先頭 / 最終行へ</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">編集の基本</div>
+      <div class="grid">
+        <div class="card">
+          <h3>削除・変更</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>x</kbd>
+              <div class="desc">1 文字削除</div>
+            </li>
+            <li class="command">
+              <kbd>dd</kbd>
+              <div class="desc">行削除</div>
+            </li>
+            <li class="command">
+              <kbd>cc</kbd>
+              <div class="desc">行を変更（削除して Insert）</div>
+            </li>
+            <li class="command">
+              <kbd>r</kbd>
+              <div class="desc">1 文字置換</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>コピー・貼り付け</h3>
+          <ul class="command-list">
+            <li class="command">
+              <kbd>yy</kbd>
+              <div class="desc">行コピー</div>
+            </li>
+            <li class="command">
+              <kbd>p / P</kbd>
+              <div class="desc">下/上に貼り付け</div>
+            </li>
+            <li class="command">
+              <kbd>u</kbd>
+              <div class="desc">Undo</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + r</kbd>
+              <div class="desc">Redo</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>数を付けて高速</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>3dd</code>
+              <div class="desc">3 行削除</div>
+            </li>
+            <li class="command">
+              <code>5j</code>
+              <div class="desc">5 行下へ</div>
+            </li>
+            <li class="command">
+              <code>2yw</code>
+              <div class="desc">2 単語コピー</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">検索・置換</div>
+      <div class="quick-grid">
+        <div class="card">
+          <h3>検索</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>/word</code>
+              <div class="desc">前方検索</div>
+            </li>
+            <li class="command">
+              <kbd>n / N</kbd>
+              <div class="desc">次/前の一致</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>置換</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>:%s/old/new/g</code>
+              <div class="desc">全体置換</div>
+            </li>
+            <li class="command">
+              <code>:s/old/new/g</code>
+              <div class="desc">行内置換</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">分割とタブ</div>
+      <div class="grid">
+        <div class="card">
+          <h3>分割</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>:split</code>
+              <div class="desc">横分割</div>
+            </li>
+            <li class="command">
+              <code>:vsplit</code>
+              <div class="desc">縦分割</div>
+            </li>
+            <li class="command">
+              <kbd>Ctrl + w</kbd>
+              <div class="desc">分割移動のプレフィックス</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>タブ</h3>
+          <ul class="command-list">
+            <li class="command">
+              <code>:tabnew</code>
+              <div class="desc">新規タブ</div>
+            </li>
+            <li class="command">
+              <kbd>gt / gT</kbd>
+              <div class="desc">次/前のタブ</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Tip:</strong> <code>:set number</code> と <code>:set relativenumber</code> は移動効率が劇的に上がります。
+      </div>
+
+      <div class="footer-note">Updated for rapid terminal editing.</div>
+    </div>
+
+  </body>
+</html>
