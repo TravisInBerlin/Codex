@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0102A0C8E96CA3E8F66862E9 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F47017824CBD8C01A469D5 /* CardsView.swift */; };
+		1C7F2107A4C3FB172FEE185E /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA6F8BE0E20028993E7214 /* APIModels.swift */; };
+		245EE2A5A12ADC13376980C6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF710DBB6DF9C2A518709AA /* MockData.swift */; };
+		2AF756573E0C605B06FD7CF3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E1AD3C3CF67C131FDB392 /* RootView.swift */; };
+		33F441F88B0A19D4E7D4BE4D /* NotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEFD6B771EA3265E57B3C32 /* NotificationRouter.swift */; };
+		399E7518CFBAB95D8A18D89C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F2A1E74E317304848780F2 /* Models.swift */; };
+		3C7BBB722F15FDCA150BBECD /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E09B7427AC011D4DFCD4AA /* Repositories.swift */; };
+		45B5A1EEAEC4B7D12981ADBD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0C485B092A020E7CEE4F98 /* Theme.swift */; };
+		48F85C94C378086B10FA12EB /* BerlinCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCC5DBEE7510B41F82ACF3 /* BerlinCoachApp.swift */; };
+		7CCF2B83CF1FCE157EEBB262 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E8B495D748DD033F8D66B /* DetailView.swift */; };
+		7CFF0D2CFC9CE1939DA54DCC /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3DAD029F32DF57393C4084 /* SourcesView.swift */; };
+		935BB3DA3FD5B2D631B2614D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C2B0E39C1C91CD379B4D8 /* SettingsView.swift */; };
+		AD83C602DF69FEC83A573BB8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E9DFAE986FFDFD67E13B47 /* APIClient.swift */; };
+		B48E61331B772F070F2B4DFB /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4450F53109A289DEFBCB7E6 /* Color+Hex.swift */; };
+		B5C1E649BAB7011058F52DB8 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2BEBA64D77EC2455E74397 /* ViewModels.swift */; };
+		B81C8CE029D7AEFED9A8A798 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D4236AF246E970995BE19 /* NotificationManager.swift */; };
+		D0F3EB95BD9184D05C73B28C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C650A82408DE2E92DF3A84 /* AppEnvironment.swift */; };
+		DC284BA579B61A7CBAE3C338 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50AD4D0CBDE980AADF1F334 /* FeedView.swift */; };
+		EAB230B067CDC1CE1401EB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DF7C6ACCDB5308BFC4252F /* Assets.xcassets */; };
+		ED20E4C120D696150475B2CE /* TabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C756841EF87A33690B92C0 /* TabBarStyle.swift */; };
+		FF463E7FF0876DACA026CAE9 /* InputSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462AE7ED237CBFF49C446EDE /* InputSheetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		098E8B495D748DD033F8D66B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0B2BEBA64D77EC2455E74397 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		1CF710DBB6DF9C2A518709AA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		39F2A1E74E317304848780F2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3BEFD6B771EA3265E57B3C32 /* NotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
+		462AE7ED237CBFF49C446EDE /* InputSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSheetView.swift; sourceTree = "<group>"; };
+		59E09B7427AC011D4DFCD4AA /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		5E5E1AD3C3CF67C131FDB392 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6C3C2B0E39C1C91CD379B4D8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6D3DAD029F32DF57393C4084 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		A1F47017824CBD8C01A469D5 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		A3C756841EF87A33690B92C0 /* TabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarStyle.swift; sourceTree = "<group>"; };
+		A4450F53109A289DEFBCB7E6 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		C397FA0F54AA5C4EE26C2E86 /* BerlinCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BerlinCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50AD4D0CBDE980AADF1F334 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C7DF7C6ACCDB5308BFC4252F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0C485B092A020E7CEE4F98 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D33EEC2F06827FDB3A01D6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5AA6F8BE0E20028993E7214 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		E4E9DFAE986FFDFD67E13B47 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E5C650A82408DE2E92DF3A84 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		EC3D4236AF246E970995BE19 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F0FCC5DBEE7510B41F82ACF3 /* BerlinCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinCoachApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6170773C4A4B265A71EC05F1 = {
+			isa = PBXGroup;
+			children = (
+				A65EF44F15F8296393139661 /* BerlinCoach */,
+				F144F1A9D9D35DCCFD3060ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A65EF44F15F8296393139661 /* BerlinCoach */ = {
+			isa = PBXGroup;
+			children = (
+				E4E9DFAE986FFDFD67E13B47 /* APIClient.swift */,
+				D5AA6F8BE0E20028993E7214 /* APIModels.swift */,
+				E5C650A82408DE2E92DF3A84 /* AppEnvironment.swift */,
+				C7DF7C6ACCDB5308BFC4252F /* Assets.xcassets */,
+				F0FCC5DBEE7510B41F82ACF3 /* BerlinCoachApp.swift */,
+				A1F47017824CBD8C01A469D5 /* CardsView.swift */,
+				A4450F53109A289DEFBCB7E6 /* Color+Hex.swift */,
+				098E8B495D748DD033F8D66B /* DetailView.swift */,
+				C50AD4D0CBDE980AADF1F334 /* FeedView.swift */,
+				D33EEC2F06827FDB3A01D6D8 /* Info.plist */,
+				462AE7ED237CBFF49C446EDE /* InputSheetView.swift */,
+				1CF710DBB6DF9C2A518709AA /* MockData.swift */,
+				39F2A1E74E317304848780F2 /* Models.swift */,
+				EC3D4236AF246E970995BE19 /* NotificationManager.swift */,
+				3BEFD6B771EA3265E57B3C32 /* NotificationRouter.swift */,
+				59E09B7427AC011D4DFCD4AA /* Repositories.swift */,
+				5E5E1AD3C3CF67C131FDB392 /* RootView.swift */,
+				6C3C2B0E39C1C91CD379B4D8 /* SettingsView.swift */,
+				6D3DAD029F32DF57393C4084 /* SourcesView.swift */,
+				A3C756841EF87A33690B92C0 /* TabBarStyle.swift */,
+				CB0C485B092A020E7CEE4F98 /* Theme.swift */,
+				0B2BEBA64D77EC2455E74397 /* ViewModels.swift */,
+			);
+			path = BerlinCoach;
+			sourceTree = "<group>";
+		};
+		F144F1A9D9D35DCCFD3060ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C397FA0F54AA5C4EE26C2E86 /* BerlinCoach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220D8C3885A3089A5A2352D9 /* BerlinCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5395A1E047B900A14027A9 /* Build configuration list for PBXNativeTarget "BerlinCoach" */;
+			buildPhases = (
+				F29A2F1BBA44E511561AA948 /* Sources */,
+				D09FD584B52D5583212B60D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BerlinCoach;
+			packageProductDependencies = (
+			);
+			productName = BerlinCoach;
+			productReference = C397FA0F54AA5C4EE26C2E86 /* BerlinCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A14ADC3C45B369D8B271A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = BE1ED00EEAC1B1DE13786DCF /* Build configuration list for PBXProject "BerlinCoach" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6170773C4A4B265A71EC05F1;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220D8C3885A3089A5A2352D9 /* BerlinCoach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D09FD584B52D5583212B60D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB230B067CDC1CE1401EB57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29A2F1BBA44E511561AA948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD83C602DF69FEC83A573BB8 /* APIClient.swift in Sources */,
+				1C7F2107A4C3FB172FEE185E /* APIModels.swift in Sources */,
+				D0F3EB95BD9184D05C73B28C /* AppEnvironment.swift in Sources */,
+				48F85C94C378086B10FA12EB /* BerlinCoachApp.swift in Sources */,
+				0102A0C8E96CA3E8F66862E9 /* CardsView.swift in Sources */,
+				B48E61331B772F070F2B4DFB /* Color+Hex.swift in Sources */,
+				7CCF2B83CF1FCE157EEBB262 /* DetailView.swift in Sources */,
+				DC284BA579B61A7CBAE3C338 /* FeedView.swift in Sources */,
+				FF463E7FF0876DACA026CAE9 /* InputSheetView.swift in Sources */,
+				245EE2A5A12ADC13376980C6 /* MockData.swift in Sources */,
+				399E7518CFBAB95D8A18D89C /* Models.swift in Sources */,
+				B81C8CE029D7AEFED9A8A798 /* NotificationManager.swift in Sources */,
+				33F441F88B0A19D4E7D4BE4D /* NotificationRouter.swift in Sources */,
+				3C7BBB722F15FDCA150BBECD /* Repositories.swift in Sources */,
+				2AF756573E0C605B06FD7CF3 /* RootView.swift in Sources */,
+				935BB3DA3FD5B2D631B2614D /* SettingsView.swift in Sources */,
+				7CFF0D2CFC9CE1939DA54DCC /* SourcesView.swift in Sources */,
+				ED20E4C120D696150475B2CE /* TabBarStyle.swift in Sources */,
+				45B5A1EEAEC4B7D12981ADBD /* Theme.swift in Sources */,
+				B5C1E649BAB7011058F52DB8 /* ViewModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A8D50642CCDF274FD8C7895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = H43U88G8T4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BerlinCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		654581E503685AFF1DDB6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuya.berlincoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C449DA13CED8092C78578BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = H43U88G8T4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BerlinCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFFFB44E3344C92CB7509A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuya.berlincoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D5395A1E047B900A14027A9 /* Build configuration list for PBXNativeTarget "BerlinCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C449DA13CED8092C78578BC0 /* Debug */,
+				1A8D50642CCDF274FD8C7895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE1ED00EEAC1B1DE13786DCF /* Build configuration list for PBXProject "BerlinCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFFB44E3344C92CB7509A9C /* Debug */,
+				654581E503685AFF1DDB6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A14ADC3C45B369D8B271A09 /* Project object */;
+}

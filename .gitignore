@@ -1,0 +1,11 @@
+.DS_Store
+.tmp.pbxproj
+*.xcodeproj.old
+*.xcodeproj.bad2
+*.xcuserdatad
+**/UserInterfaceState.xcuserstate
+BerlinCoach.xcodeproj/xcuserdata
+BerlinCoach.xcodeproj/project.xcworkspace/xcuserdata
+backend/__pycache__/
+*.pyc
+backend/berlincoach.sqlite
