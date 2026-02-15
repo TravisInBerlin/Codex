@@ -38,7 +38,7 @@ Below is a step‑by‑step guide for both sides so anyone can run it.
 
 ### Backend: start API server
 ```bash
-cd /Users/Tatsuya/書類/git/Codex/backend
+cd ~/git/Codex/backend
 source .venv/bin/activate
 export USE_LLM=1
 export OLLAMA_BASE_URL="http://127.0.0.1:11434"
